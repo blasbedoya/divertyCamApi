@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camara</title>
+    <link rel="stylesheet" href="../public/styles/camara.css">
+</head>
+<body onload="listCamara()">
+    <div class="container">
+        <header>
+            <h1>Diverty Cam </h1>
+            <nav>
+                <button>Inicio</button>
+                <button  class="active">Conf. Cámara</button>
+                <button>Conf. Pantallas</button>
+                <button>Conf. Fotos</button>
+                <button>Conf. Impresora</button>
+                <button>Conf. General</button>
+            </nav>
+        </header>
+        
+    </div>  
+    <a id="crearCamara" href="createCamara.html">Crear Camara</a>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody id="content"></tbody>
+    </table>
+    
+    <script src="../public/js/functionsCamara.js"></script>
+    <footer>
+        <p>Sistema De Selección De Camara</p>
+    </footer>  
+</body>
+</html>
